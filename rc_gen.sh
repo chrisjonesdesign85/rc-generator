@@ -6,7 +6,7 @@ echo"starting postgresql service..."
 
 echo "=== Metasploit RC Generator ==="
 
-# --- 1) Prompt ONLY for workspace (your ask) ---
+# --- 1) Prompt ONLY for workspace ---
 read -rp "Workspace name (e.g., lab01): " WORKSPACE_RAW
 if [[ -z "${WORKSPACE_RAW// }" ]]; then
   echo "Workspace cannot be empty."; exit 1
